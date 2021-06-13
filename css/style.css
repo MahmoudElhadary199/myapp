@@ -1,0 +1,622 @@
+            body {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: 'poppins', sans-serif;
+                background-color: black;
+            }
+            
+            .navbar {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 10px;
+                background-color: rgba(0, 0, 0, 0.7);
+                z-index: 1234;
+            }
+            
+            .navbar_link li {
+                display: inline-block;
+                padding: 0 10px;
+                text-transform: uppercase;
+            }
+            
+            .navbar_link li a:hover {
+                color: rgb(255, 0, 64);
+            }
+            
+            .btn {
+                padding: 15px;
+                margin-right: 35px;
+                cursor: pointer;
+                background-color: greenyellow;
+                border-radius: 25px;
+                font-size: 15px;
+                border: none;
+            }
+            
+            .btn:hover {
+                color: rgba(0, 0, 0, 0.5);
+                background-color: aqua;
+            }
+            
+            li {
+                list-style: none;
+            }
+            
+            a {
+                color: white;
+                font-size: 20px;
+                text-decoration: none;
+            }
+            
+            .navbar-brand {
+                margin-left: 45px;
+            }
+            
+            .navbar-brand:hover {
+                color: greenyellow;
+            }
+            
+            .home {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            
+            .flex-container {
+                margin-top: 150px;
+                display: flex;
+                flex-wrap: wrap;
+                font-size: 20px;
+                text-align: center;
+            }
+            
+            .flex-item-left {
+                color: #f1f1f1;
+                padding: 10px;
+                flex: 50%;
+            }
+            
+            .flex-item-right {
+                color: dodgerblue;
+                padding: 10px;
+                flex: 50%;
+                margin-left: 230px;
+                margin-right: 230px;
+            }
+            
+            .flex-container .flex-item-right button {
+                padding: 15px;
+                cursor: pointer;
+                background-color: greenyellow;
+                border-radius: 25px;
+                font-size: 15px;
+                border: none;
+                font-size: 20px;
+            }
+            
+            .learn button :hover {
+                color: tomato;
+                background-color: tomato;
+                font-weight: bold;
+                font-size: 35px;
+                border-left: 20px;
+                border-right: 20px;
+            }
+            
+            .flex-container h1::after {
+                content: "";
+                animation: slider 10s linear infinite;
+            }
+            
+            .flex-container .scroll {
+                width: 25px;
+                height: 45px;
+                border: 2px solid #fff;
+                border-radius: 15px;
+                margin: auto;
+                position: absolute;
+                bottom: 50px;
+                left: 50%;
+                transform: translateX(-50%);
+                animation: scroll 3s infinite linear;
+                cursor: pointer;
+            }
+            
+            .flex-container .scroll::after {
+                content: "";
+                width: 3px;
+                height: 10px;
+                position: absolute;
+                background-color: white;
+                bottom: 10px;
+                transform: translateX(-50%);
+            }
+            
+            @keyframes slider {
+                0% {
+                    content: "K|";
+                }
+                1% {
+                    content: "Ke|";
+                }
+                2% {
+                    content: "Ker|";
+                }
+                3% {
+                    content: "Kerr.|";
+                }
+                4% {
+                    content: "Kerri|";
+                }
+                5% {
+                    content: "Kerri |";
+                }
+                6% {
+                    content: "Kerri D|";
+                }
+                7% {
+                    content: "Kerri De|";
+                }
+                8% {
+                    content: "Kerri Deo|";
+                }
+                9% {
+                    content: "Kerri Deo.|";
+                }
+                10% {
+                    content: "Kerri Deo|";
+                }
+                11% {
+                    content: "Kerri De|";
+                }
+                12% {
+                    content: "Kerri D|";
+                }
+                13% {
+                    content: "Kerri |";
+                }
+                14% {
+                    content: "Kerri|";
+                }
+                15% {
+                    content: "Kerr|";
+                }
+                16% {
+                    content: "Ker|";
+                }
+                17% {
+                    content: "Ke|";
+                }
+                18% {
+                    content: "K|";
+                }
+                19% {
+                    content: "|";
+                }
+                20% {
+                    content: "A|";
+                }
+                21% {
+                    content: "A |";
+                }
+                22% {
+                    content: "A P|";
+                }
+                23% {
+                    content: "A Ph|";
+                }
+                25% {
+                    content: "A Pho|";
+                }
+                26% {
+                    content: "A Phot|";
+                }
+                27% {
+                    content: "A Photo|";
+                }
+                28% {
+                    content: "A Photog|";
+                }
+                29% {
+                    content: "A Photogr|";
+                }
+                30% {
+                    content: "A Photogra|";
+                }
+                31% {
+                    content: "A Photograp|";
+                }
+                32% {
+                    content: "A Photograph|";
+                }
+                33% {
+                    content: "A Photographe|";
+                }
+                34% {
+                    content: "A Photographer|";
+                }
+                35% {
+                    content: "A Photographer.|";
+                }
+                36% {
+                    content: "A Photographer|";
+                }
+                37% {
+                    content: "A Photographe|";
+                }
+                38% {
+                    content: "A Photograph|";
+                }
+                39% {
+                    content: "A Photograp|";
+                }
+                40% {
+                    content: "A Photogra|";
+                }
+                41% {
+                    content: "A Photogr|";
+                }
+                42% {
+                    content: "A Photog|";
+                }
+                43% {
+                    content: "A Photo|";
+                }
+                44% {
+                    content: "A Phot|";
+                }
+                45% {
+                    content: "A Pho|";
+                }
+                46% {
+                    content: "A Ph|";
+                }
+                47% {
+                    content: "A P|";
+                }
+                48% {
+                    content: "A |";
+                }
+                49% {
+                    content: "A|";
+                }
+                50% {
+                    content: "|";
+                }
+                51% {
+                    content: "A|";
+                }
+                52% {
+                    content: "A |";
+                }
+                53% {
+                    content: "A G|";
+                }
+                54% {
+                    content: "A Gr|";
+                }
+                55% {
+                    content: "A Gra|";
+                }
+                56% {
+                    content: "A Grap|";
+                }
+                57% {
+                    content: "A Graph|";
+                }
+                58% {
+                    content: "A Graphi|";
+                }
+                59% {
+                    content: "A Graphic|";
+                }
+                60% {
+                    content: "A Graphic |";
+                }
+                61% {
+                    content: "A Graphic D|";
+                }
+                62% {
+                    content: "A Graphic De|";
+                }
+                63% {
+                    content: "A Graphic Des|";
+                }
+                64% {
+                    content: "A Graphic Desi|";
+                }
+                65% {
+                    content: "A Graphic Desig|";
+                }
+                66% {
+                    content: "A Graphic Design|";
+                }
+                67% {
+                    content: "A Graphic Designe|";
+                }
+                68% {
+                    content: "A Graphic Designer|";
+                }
+                69% {
+                    content: "A Graphic Designer.|";
+                }
+                70% {
+                    content: "A Graphic Designer|";
+                }
+                71% {
+                    content: "A Graphic Designe|";
+                }
+                72% {
+                    content: "A Graphic Design|";
+                }
+                73% {
+                    content: "A Graphic Desig|";
+                }
+                74% {
+                    content: "A Graphic Desi|";
+                }
+                75% {
+                    content: "A Graphic Des|";
+                }
+                76% {
+                    content: "A Graphic De|";
+                }
+                77% {
+                    content: "A Graphic D|";
+                }
+                78% {
+                    content: "A Graphic |";
+                }
+                79% {
+                    content: "A Graphic|";
+                }
+                80% {
+                    content: "A Graphi|";
+                }
+                81% {
+                    content: "A Graph|";
+                }
+                82% {
+                    content: "A Grap|";
+                }
+                83% {
+                    content: "A Gra|";
+                }
+                84% {
+                    content: "A Gr|";
+                }
+                85% {
+                    content: "A G|";
+                }
+                86% {
+                    content: "A |";
+                }
+                87% {
+                    content: "A|";
+                }
+                88% {
+                    content: "|";
+                }
+                89% {
+                    content: "";
+                }
+                90% {
+                    content: "";
+                }
+                91% {
+                    content: "";
+                }
+                92% {
+                    content: "";
+                }
+                93% {
+                    content: "";
+                }
+                94% {
+                    content: "";
+                }
+                95% {
+                    content: "";
+                }
+                96% {
+                    content: "";
+                }
+                97% {
+                    content: "";
+                }
+                98% {
+                    content: "";
+                }
+                99% {
+                    content: "";
+                }
+                100% {
+                    content: "";
+                }
+            }
+            
+            @keyframes scroll {
+                0% {
+                    margin-top: 50px;
+                    bottom: 50px;
+                }
+                10% {
+                    margin-top: 50px;
+                    bottom: 100px;
+                }
+                20% {
+                    margin-top: 50px;
+                    bottom: 50px;
+                }
+                30% {
+                    margin-top: 50px;
+                    bottom: 80px;
+                }
+                40% {
+                    margin-top: 50px;
+                    bottom: 50px;
+                }
+                50% {
+                    margin-top: 50px;
+                    bottom: 70px;
+                }
+                60% {
+                    margin-top: 50px;
+                    bottom: 50px;
+                }
+                70% {
+                    margin-top: 50px;
+                    bottom: 60px;
+                }
+                80% {
+                    margin-top: 50px;
+                    bottom: 50px;
+                }
+                90% {
+                    margin-top: 50px;
+                    bottom: 50px;
+                }
+                100% {
+                    margin-top: 50px;
+                    bottom: 50px;
+                }
+            }
+            
+            .scroll {
+                margin-top: 50px;
+                padding-top: 5px;
+            }
+            
+            .h3_operating {
+                color: white;
+                margin: 20px;
+                font-size: 18px;
+                color: green;
+            }
+            
+            .h2_operating {
+                color: white;
+                margin: 20px;
+                font-size: 50px;
+            }
+            
+            .p_operating {
+                color: white;
+                padding: 20px;
+                margin: 20px;
+            }
+            
+            .column {
+                float: left;
+                padding: 15px;
+                box-sizing: border-box;
+            }
+            
+            .clearfix {
+                margin-top: 200px;
+                content: "";
+                clear: both;
+                margin-left: 100px;
+                margin-right: 100px;
+            }
+            
+            .menu {
+                width: 50%;
+            }
+            
+            .content {
+                width: 50%;
+            }
+            
+            .content img {
+                width: 75%;
+                margin-top: 50px;
+            }
+            
+            .menu .btn {
+                margin-right: 100px;
+            }
+            
+            .clear {
+                clear: both;
+            }
+            
+            .serv {
+                display: flex;
+                justify-content: center;
+                text-align: center;
+                /* margin: auto; */
+                margin-top: 100px;
+                background-color: red;
+            }
+            
+            .services h2 {
+                text-align: center;
+                color: white;
+            }
+            
+            .serv_item {
+                margin: auto;
+                border-radius: 15px;
+                width: 20%;
+                float: left;
+                background-color: white;
+                margin: 10px;
+            }
+            
+            .serv_item p {
+                text-align: center;
+            }
+            
+            .serv_item img {
+                width: 70%;
+            }
+            /* .clr {
+                clear: both
+            } */
+            
+            .container {
+                width: 75%;
+                padding: 30px;
+                margin-top: 100px;
+            }
+            
+            label {
+                color: white;
+                margin-bottom: 20px;
+            }
+            
+            input {
+                width: 100%;
+                padding: 10px;
+                border-color: tomato;
+                border-radius: 15px;
+                margin: 20px;
+            }
+            
+            .footer {
+                display: flex;
+                justify-content: space-around;
+                margin: 50px;
+                padding: 50px;
+            }
+            
+            .foot_item {
+                border-radius: 50%;
+                margin: 10px;
+                padding: 100px;
+                background-color: white;
+            }
+            
+            .fab {
+                color: blue;
+                font-size: 30px;
+                cursor: pointer;
+                padding: 15px;
+            }
+            
+            .fab:hover {
+                color: aqua;
+            }
